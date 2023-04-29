@@ -160,11 +160,7 @@ const Sidebar = ({
 						<List>
 							{navItems.map(({ text, icon }) => {
 								if (!icon) {
-									return (
-										<Typography key={text} sx={{ m: '.5rem 0' }}>
-											<Divider />
-										</Typography>
-									);
+									return <Divider key={text} sx={{ m: '.5rem 0' }} />;
 								}
 								const lcText = text.toLowerCase();
 
